@@ -8,7 +8,7 @@ install angular
   npm install -g @angular/cli@19.1.6
 ```
 
-### npm install to install all the dependencies listed in the package.json file of a Node.js project.
+### npm install to install all the dependencies listed in the package.json file of a project.
 ```bash
   npm install
 ```
