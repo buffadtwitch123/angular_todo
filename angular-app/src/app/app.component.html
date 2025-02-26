@@ -1,0 +1,37 @@
+<div class="main-container">
+    <div class="list-title">
+        <!--list header-->
+        <div class="list-title-text">
+            <p>Todo List</p>
+        </div>
+        <div class="input-wrapper">
+            <!--adding tasks-->
+            <label for="in1">Add a task</label>
+            <div>
+                <input type="text" id="in1" name="in1" [(ngModel)]="Task_text">
+                <button (click)="addTask(Task_text)">add</button>
+            </div>
+        </div>
+    </div>
+    <div cdkDropList (cdkDropListDropped)="drop($event)" class="list-body ">
+        <!--contains tasks-->
+        <div cdkDrag class="list-item" *ngFor="let task of Tasks">
+                <div  class="checkbox-wrapper">
+                    <!--task status checkbox-->
+                    <input type="checkbox" class="cbx" (change)="toggleTaskStatus(task.id)" [(ngModel)]="task.finished"  [disabled]="task.finished">
+                </div>
+                <div class="item-task" >
+                    <!--task text-->
+                    <p class="item-task-text" [ngStyle]="{'color':task.finished?'grey':'#121212' , 'text-decoration':task.finished?'line-through':'none'}">{{task.task}}</p>
+                </div>
+                <div class="item-status">
+                    <!--task status-->
+                    <p class="item-status-text" [ngStyle]="{'color':task.finished?'grey':'#121212'}">{{task.finished?"finished":"not finished"}}</p>
+                </div>
+                <div class="item-delete">
+                    <!--delete button-->
+                    <button type="button" class="item-delete-button" [disabled]="!task.finished" (click)="deleteTask(task)">Delete</button>
+                </div>
+        </div>
+    </div>
+</div>

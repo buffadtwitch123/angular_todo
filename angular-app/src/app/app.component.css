@@ -1,0 +1,119 @@
+*{
+    font-family: 'Roboto'; /* regular 400 */
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  
+    height: 95vh;
+    width: 100%;
+}
+
+.input-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 10vh;
+    width: 10vw;
+   
+}
+.input-wrapper div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.input-wrapper div button{
+    margin-left: 5px;
+}
+
+.list-body{
+    padding-top: 2px;
+}
+
+.list-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 236, 204);
+    width: 50vw;
+    height: 20vh;
+    border: 2px solid #121212;
+    border-radius: 5px;
+    margin-bottom: 0px;
+}
+
+.list-title-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 20vw;
+
+    color: #121212;
+    font-size: 50px;
+}
+
+.list-body{
+    padding-top: 5px;
+    height: 50vh;
+    width: 50vw;
+    background-color: #f5f5dc;
+    overflow-y:auto;
+}
+
+.list-item{
+    background-color: #F2F2F2;
+    height: 7vh;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+
+.checkbox-wrapper{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 5vw;
+
+}
+
+
+
+.item-task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 30vw;
+}
+
+.item-status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 10vw;
+}
+
+.item-delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    height: 100%;
+    width: 5vw;
+}
+
+
+
+
